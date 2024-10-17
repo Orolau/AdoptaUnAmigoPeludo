@@ -3,7 +3,7 @@ import './styles/estiloTarjetaMascotas.css'
 const Mascota = ({infoMascota}) =>{
 
     return (
-        <div>
+        <div className='tarjetaMascota'>
             <img src={infoMascota.imagen} className='fotoMascota' alt={infoMascota.nombre}/>
             <h2>{infoMascota.nombre}</h2>
             <h3>{infoMascota.tipo}</h3>

@@ -1,0 +1,79 @@
+/* Estilos para el contenedor del filtro */
+.filtro-container {
+    background-color: #ffffff; /* Color de fondo blanco */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Espaciado externo superior e inferior */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más prominente */
+}
+
+/* Estilo para los elementos de etiqueta */
+.filtro-container label {
+    display: block; /* Hace que las etiquetas ocupen todo el ancho */
+    margin-bottom: 5px; /* Espaciado inferior entre etiqueta y elemento de entrada */
+    font-weight: bold; /* Negrita para las etiquetas */
+    color: #333; /* Color de texto oscuro */
+}
+
+/* Estilo para el formulario */
+.filtro-container form {
+    display: flex; /* Usar flexbox para el diseño */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten a varias líneas */
+    gap: 15px; /* Espacio entre los elementos */
+}
+
+/* Estilo para los elementos de selección y entrada */
+.filtro-container select,
+.filtro-container input[type="range"],
+.filtro-container input[type="checkbox"] {
+    flex: 1 1 30%; /* Cada filtro ocupará aproximadamente un 30% del ancho */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna */
+    transition: border-color 0.3s ease; /* Transición suave para el borde */
+}
+
+/* Efecto al enfocar el input */
+.filtro-container input:focus,
+.filtro-container select:focus {
+    border-color: #007bff; /* Color de borde azul al enfocar */
+    outline: none; /* Quitar el contorno por defecto */
+}
+
+/* Estilo para el botón */
+.filtro-container button {
+    background-color: #28a745; /* Color de fondo verde */
+    color: white; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.filtro-container button:hover {
+    background-color: #218838; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilo para los checkboxes */
+.filtro-container input[type="checkbox"] {
+    width: auto; /* Ancho automático para checkboxes */
+}
+
+/* Espaciado entre el checkbox y su etiqueta */
+.filtro-container label[for] {
+    display: inline-block; /* Mantener etiquetas de checkbox en línea */
+    margin-left: 8px; /* Espacio entre checkbox y etiqueta */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .filtro-container select,
+    .filtro-container input[type="range"],
+    .filtro-container input[type="checkbox"] {
+        flex: 1 1 100%; /* Asegura que los filtros ocupen el ancho completo en pantallas pequeñas */
+    }
+}

@@ -1,0 +1,21 @@
+.lista-mascotas {
+    display: flex; /* Usa Flexbox para alinear los elementos en fila */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espacio entre las tarjetas de las mascotas */
+    margin: 20px; /* Margen alrededor del contenedor de la lista */
+}
+
+.mascota {
+    border: 1px solid #ccc; /* Bordes para cada mascota */
+    border-radius: 8px; /* Esquinas redondeadas */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centra el texto dentro de cada tarjeta */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    width: 200px; /* Ancho fijo de las tarjetas */
+    transition: transform 0.3s; /* Transición suave para el efecto hover */
+}
+
+.mascota:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al pasar el mouse */
+}
