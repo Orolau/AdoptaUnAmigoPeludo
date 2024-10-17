@@ -1,0 +1,62 @@
+/* Estilos generales para la tarjeta */
+.tarjetaMascota {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Imagen de la mascota */
+.fotoMascota {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para los títulos */
+.tarjetaMascota h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tarjetaMascota h3 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Lista de detalles */
+.tarjetaMascota ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tarjetaMascota ul li {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Añadir color de fondo alternativo a los detalles */
+.tarjetaMascota ul li:nth-child(odd) {
+    background-color: #efefef;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Hacer clic en el URL */
+.tarjetaMascota ul li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.tarjetaMascota ul li a:hover {
+    text-decoration: underline;
+}
