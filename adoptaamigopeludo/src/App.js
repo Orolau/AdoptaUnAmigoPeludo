@@ -2,6 +2,7 @@ import './App.css';
 import ListaMascotas from './components/ListaMascotas';
 import Filtro from './components/Filtro'
 import {useState, useEffect} from 'react';
+import FormAdopcion from './components/FormAdopcion'
 
 
 async function obtenerMascotasAPI () {
@@ -14,6 +15,7 @@ async function obtenerMascotasAPI () {
 function App() {
   const [infoMascotas, setInfoMascotas] = useState([]);
   const [mascotasFiltradas, setMascotasFiltradas] = useState([]);
+  const [muestraFormulario, setMuestraFormulario] = useState(false);
 
   const cargarMascotas = async () => {
     try {
@@ -27,7 +29,11 @@ function App() {
 
   const aplicarFiltros = (listaMascotas) =>{
     setMascotasFiltradas(listaMascotas);
-  }
+  };
+
+  const mostrarFormulario = () => {
+    setMuestraFormulario(true);
+  };
 
   useEffect(() => {
     cargarMascotas(); 
@@ -35,11 +41,14 @@ function App() {
 
   return (
     <div className="App">
-      
+      {
+        muestraFormulario &&
+        <FormAdopcion muestraFormulario={muestraFormulario} setMuestraFormulario={setMuestraFormulario}/>
+      }
       <Filtro listaMascotas={infoMascotas} funcionMostrarMascotas={aplicarFiltros}/>
       {
         mascotasFiltradas.length > 0 ? 
-        <ListaMascotas  listaMascotas={mascotasFiltradas}/> 
+        <ListaMascotas  listaMascotas={mascotasFiltradas} setMuestraFormulario={mostrarFormulario}/> 
         : <p>No se han encontrado máscotas que cumplan los requisitos</p>
 
       }

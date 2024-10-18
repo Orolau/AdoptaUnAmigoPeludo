@@ -1,6 +1,6 @@
 import './styles/estiloTarjetaMascotas.css'
 
-const Mascota = ({infoMascota}) =>{
+const Mascota = ({infoMascota, muestraFormulario}) =>{
 
     return (
         <div className='tarjetaMascota'>
@@ -27,6 +27,8 @@ const Mascota = ({infoMascota}) =>{
                 <li>{infoMascota.comuna}</li>
                 <li><a href={infoMascota.url} target="_blank" rel="noopener noreferrer">Más información</a></li>
             </ul>
+
+            <button onClick={muestraFormulario}>Adoptar</button>
         </div>
     )
 

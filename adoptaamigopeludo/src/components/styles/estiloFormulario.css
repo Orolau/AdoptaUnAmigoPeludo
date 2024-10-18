@@ -1,0 +1,86 @@
+.formularioAdopcion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Para asegurarse de que esté en el frente */
+}
+
+.formularioAdopcion form {
+    background-color: #f8e3f0; /* Fondo del formulario en color pastel rosa */
+    padding: 20px; /* Espaciado interno reducido */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+    width: 90%; /* Para que ocupe el 90% del ancho de la pantalla */
+    max-width: 400px; /* Tamaño máximo para que no sea demasiado ancho */
+    position: relative; /* Para poder posicionar elementos internos */
+}
+
+.formularioAdopcion h2 {
+    color: #6f2c91; /* Color del título en un violeta suave */
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.formularioAdopcion label {
+    margin-top: 10px; /* Espacio entre etiquetas */
+    color: #4a4a4a; /* Color de las etiquetas */
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+.formularioAdopcion input {
+    width: calc(100% - 20px); /* Ancho completo menos márgenes */
+    padding: 8px; /* Espaciado interno reducido */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-top: 5px; /* Espacio entre la etiqueta y el input */
+    margin-bottom: 15px; /* Espacio entre inputs */
+    transition: border-color 0.3s; /* Transición suave para el borde */
+}
+
+/* Efecto al enfocar el input */
+.formularioAdopcion input:focus {
+    border-color: #ff6f91; /* Color de borde rosa al enfocar */
+    outline: none; /* Quitar el contorno por defecto */
+}
+
+.formularioAdopcion button {
+    background-color: #7b2cbf; /* Color de fondo del botón violeta */
+    color: white; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+    width: 100%; /* Botón ocupa el ancho completo */
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.formularioAdopcion button:hover {
+    background-color: #6b1d99; /* Color más oscuro al pasar el mouse */
+}
+
+.formularioAdopcion .cerrarFormulario {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: #b85fca; /* Color de fondo del botón de cerrar */
+    color: white;
+    border: none;
+    padding: 5px 8px; /* Tamaño reducido para el botón */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px; /* Tamaño de fuente pequeño */
+    transition: background-color 0.3s; /* Transición para el color */
+}
+
+.formularioAdopcion .cerrarFormulario:hover {
+    background-color: #4da0ff; /* Color más oscuro al pasar el mouse */
+}

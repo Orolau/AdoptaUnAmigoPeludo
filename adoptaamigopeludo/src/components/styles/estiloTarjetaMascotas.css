@@ -1,62 +1,81 @@
 /* Estilos generales para la tarjeta */
 .tarjetaMascota {
-    width: 300px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 20px;
     text-align: center;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #fafafa; /* Color pastel de fondo */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Añadir un efecto de hover en la tarjeta */
+.tarjetaMascota:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Imagen de la mascota */
 .fotoMascota {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 12px;
     margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar la imagen */
 }
 
 /* Estilos para los títulos */
 .tarjetaMascota h2 {
-    font-size: 24px;
+    font-size: 26px;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    color: #6c757d; /* Color pastel suave */
 }
 
 .tarjetaMascota h3 {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 5px;
+    font-size: 20px;
+    color: #8a94a6;
+    margin-bottom: 8px;
 }
 
 /* Lista de detalles */
 .tarjetaMascota ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .tarjetaMascota ul li {
     font-size: 16px;
-    margin: 5px 0;
-    color: #555;
+    margin: 8px 0;
+    color: #5e6473;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #f3f4f6; /* Color pastel claro */
 }
 
-/* Añadir color de fondo alternativo a los detalles */
+/* Colores alternativos para los detalles */
 .tarjetaMascota ul li:nth-child(odd) {
-    background-color: #efefef;
-    padding: 5px;
-    border-radius: 5px;
+    background-color: #e7f3f7; /* Color pastel alternativo */
 }
 
-/* Hacer clic en el URL */
+/* Estilos para el enlace */
 .tarjetaMascota ul li a {
-    color: #007BFF;
+    color: #5e92f3;
     text-decoration: none;
 }
 
 .tarjetaMascota ul li a:hover {
     text-decoration: underline;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .tarjetaMascota {
+        width: 100%; /* Ajustar el tamaño en pantallas pequeñas */
+        margin: 10px 0;
+    }
 }
