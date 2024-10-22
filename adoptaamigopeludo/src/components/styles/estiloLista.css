@@ -2,7 +2,7 @@
     display: flex; /* Usa Flexbox para alinear los elementos en fila */
     flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
     justify-content: center; /* Centra los elementos horizontalmente */
-    gap: 20px; /* Espacio entre las tarjetas de las mascotas */
+    gap: 10px; /* Espacio entre las tarjetas de las mascotas */
     margin: 20px; /* Margen alrededor del contenedor de la lista */
 }
 
@@ -18,4 +18,20 @@
 
 .mascota:hover {
     transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al pasar el mouse */
+}
+
+
+.tarjetaMascota button {
+    background-color: #4e9e36; /* Color de fondo del botón violeta */
+    color: white; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+    width: 100%; /* Botón ocupa el ancho completo */
+}
+.tarjetaMascota button:hover{
+    background-color: #229b6b;
+
 }

@@ -55,6 +55,7 @@ const Filtro = ({ funcionMostrarMascotas, listaMascotas }) => {
                 <select value={filtroTipo} onChange={e => setFiltroTipo(e.target.value)}>
                     <option value="">Todos</option>
                     <option value="Perro">Perro</option>
+                    <option value="Conejo">Conejo</option>
                     <option value="Gato">Gato</option>
                 </select>
 

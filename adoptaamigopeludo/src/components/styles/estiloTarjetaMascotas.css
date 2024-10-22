@@ -8,7 +8,7 @@
     margin: 20px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    background-color: #fafafa; /* Color pastel de fondo */
+    background-color: #ffffff;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -20,11 +20,11 @@
 
 /* Imagen de la mascota */
 .fotoMascota {
-    width: 100%;
-    height: auto;
+    width: 75%;
+    height: 250px;
     border-radius: 12px;
     margin-bottom: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /* Estilos para los títulos */
@@ -37,7 +37,6 @@
 
 .tarjetaMascota h3 {
     font-size: 20px;
-    color: #8a94a6;
     margin-bottom: 8px;
 }
 
@@ -59,7 +58,7 @@
 
 /* Colores alternativos para los detalles */
 .tarjetaMascota ul li:nth-child(odd) {
-    background-color: #e7f3f7; /* Color pastel alternativo */
+    background-color: #e9f5f4; /* Color pastel alternativo */
 }
 
 /* Estilos para el enlace */
@@ -70,6 +69,12 @@
 
 .tarjetaMascota ul li a:hover {
     text-decoration: underline;
+}
+
+.primeraLineaInfoMascota{
+    display: flex;
+    gap: 55%;
+    
 }
 
 /* Ajustes para pantallas pequeñas */

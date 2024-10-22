@@ -24,6 +24,7 @@ const FormAdopcion = ({ idMascota, muestraFormulario, setMuestraFormulario }) =>
         //Aquí se enviaría una solicitud de adopción a la organización
         setMostrar(!mostrar);
         console.log(`Adoptando a `, idMascota);
+        console.log(`Datos del adoptante: `, datosPersona);
     }
 
     const ocultarFormulario = () => {

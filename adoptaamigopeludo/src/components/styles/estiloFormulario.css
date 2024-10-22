@@ -12,7 +12,7 @@
 }
 
 .formularioAdopcion form {
-    background-color: #f8e3f0; /* Fondo del formulario en color pastel rosa */
+    background-color: #cde7f8; /* Fondo del formulario en color pastel rosa */
     padding: 20px; /* Espaciado interno reducido */
     border-radius: 12px; /* Bordes redondeados */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más suave */
@@ -45,7 +45,7 @@
 
 /* Efecto al enfocar el input */
 .formularioAdopcion input:focus {
-    border-color: #ff6f91; /* Color de borde rosa al enfocar */
+    border-color: #006b07; /* Color de borde rosa al enfocar */
     outline: none; /* Quitar el contorno por defecto */
 }
 
